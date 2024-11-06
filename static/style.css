@@ -1,0 +1,162 @@
+@font-face{
+    font-family: 'Pretendard-Bold';
+    src:url('../static/font/Pretendard-Bold.woff2');
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../static/font/Pretendard-Medium.woff2');
+}
+
+*{
+	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body>:not(.navbar) {justify-content: center;}
+
+/*헤더*/
+.navbar{
+	width: 1422px;
+	height: 80px;
+    display: flex;
+	margin: auto;
+	background-color: #00462A;
+}
+.search_area{
+	width: 250px;
+	height: 40px;
+	margin-left: 50px;
+	margin-top: 19px;
+}
+.search_area > input{
+	width: 250px;
+	height: 40px;
+	background-color: #ffffff;
+	padding: 0 80px 0 20px;
+    	border-radius: 30px;
+}
+#search {
+	position: absolute;
+	left: 591px; top: 29px;
+}
+.navbar__menu{
+	display: flex;
+	margin-left: 130px;
+	list-style: none;
+}
+.navbar__menu > li{
+	margin-left: 85px;
+	margin-top: 12px;
+}
+.navbar__menu > li > a{
+	font-size: 19.2px;
+	color: #939393;
+	text-decoration: none;
+}
+.navbar__menu > li > a.active{
+	color: #ffffff;
+	font-weight: bold;
+}
+.navbar__logo {
+	margin-top: 10px;
+}
+
+
+/*리스트*/
+.list_section {
+	position: absolute;
+	text-align: right;
+	left: 1088px; top: 136px;
+}
+#list_title {
+	font-size: 20.8px;
+	font-weight: bold;
+}
+#list_info {
+	font-size: 12.8px;
+	color: #737373;
+}
+
+.category-nav {
+	display: flex;
+	padding: 16px;
+	margin-top: 16px;
+	margin-left: 193.6px;
+	font-size: 19.2px;
+	height: 24px;
+	align-items: center;
+}
+.category-nav a, p {
+	padding-left: 19.2px;
+	padding-right: 19.2px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+.category-nav a.active {
+	background-color: #6ab04c;
+	color: white;
+	font-size: 21px;
+}
+.subcategory-nav {
+	display: flex;
+	gap: 80px;
+	padding-left: 40px; padding-bottom: 9.6px; padding-top: 9.6px;
+	margin-left: 195.2px; margin-right: 704px; margin-bottom: 16px;
+	background-color: #f0f0f0;
+}
+.subcategory-nav a {
+	text-decoration: none;
+	color: #737373;
+}
+.product-list {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+	place-items: center;
+	margin-left: 195.2px;
+	margin-right: 195.2px;
+}
+.product-item {
+	border-radius: 5px;
+	margin-bottom: 16px;
+	position: relative; /* 자식 요소를 절대 위치로 배치하기 위해 필요 -> 상품 상세로 이동하기 위해 추가함*/
+}
+.product-item img {
+	background-color: #ddd;
+	width: 14vw;
+	height: 14vw;
+	border-radius: 5px;
+}
+
+.product-item a.product-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* 텍스트 장식 제거 */
+    color: transparent; /* 텍스트 색상 투명하게 설정 */
+    z-index: 1; /* 이미지 위로 오도록 설정 */
+} /*추가함*/
+
+.product-name {
+	font-weight: bold;
+}
+.pagination {
+	display: flex;
+	justify-content : center;
+	gap: 8px;
+	padding: 16px;
+}
+.pagination a {
+	text-decoration: none;
+	color: #888;
+	padding: 8px;
+	border-radius: 30px;
+}
+.pagination a.active {
+	background-color: #6ab04c;
+	color: white;
+	font-weight: bold;
+}

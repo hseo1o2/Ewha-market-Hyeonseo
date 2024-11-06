@@ -1,0 +1,157 @@
+body {
+    font-family: 'Pretendard-Medium';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-detail-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    font-family: 'Pretendard-Medium';
+}
+
+
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+
+.product-image {
+    width: 340px;
+    height: 340px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #737373;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.review-btn, .buy-btn {
+    padding: 1.8rem 0.3rem;
+    font-size: 1rem;
+    font-family: 'Pretendard-Bold';
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    height: 22.5px;
+}
+
+.review-btn {
+    background-color: #6CA062;
+}
+
+.buy-btn {
+    background-color: #00462A;
+}
+
+.details-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 왼쪽 정렬 */
+    padding-left: 0.5rem; /* 시작점 조정을 위해 왼쪽 여백 추가 */
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    color: #737373;
+    margin-bottom: 0rem;
+}
+
+.product-title {
+    font-size: 3rem;
+    font-family: 'Pretendard-Bold';
+    margin-bottom: 0rem;
+    margin-top: 0.7rem;
+    padding-left: 0;
+}
+
+.price {
+    font-size: 2.3rem;
+    color: #6CA062;
+    margin-bottom: 1.5rem;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
+    text-align: left;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.product-info p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+    text-align: left;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.product-info-item {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 0; /* 각 항목 간의 세로 간격 */
+    color: #000000;
+    
+}
+
+
+.separator {
+    margin: 0 0.5rem;
+    color: #999999;
+    font-family: 'Pretendard-Medium';
+
+}
+
+.product-description {
+    margin-top: 2.5rem;
+    text-align: left;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.product-description h2 {
+    font-size: 1.2rem;
+    font-family: 'Pretendard-Bold';
+    color: #333;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    text-align: left;
+    padding-left: 0;
+}
+
+.product-description p {
+    font-size: 1rem;
+    color: #737373;
+    line-height: 1.8;
+    max-width: 350px;
+    text-align: left;
+    padding-left: 0;
+    font-family: 'Pretendard-Medium';
+
+}

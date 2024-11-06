@@ -1,0 +1,154 @@
+@font-face{
+    font-family: 'Pretendard-Bold';
+    src:url('../static/font/Pretendard-Bold.woff2');
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../static/font/Pretendard-Medium.woff2');
+}
+
+body{
+    font-family: 'Pretendard-Medium';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-logo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+input:focus {
+    outline: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-family: 'Pretendard-Bold';
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+#id-input{
+    padding-left: 10px;
+    width: 500px;
+    height: 50px;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 0;
+}
+.pw-container{
+    margin-top: 15px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#password-input{
+    height: 50px;
+    width: 425px;
+    border: none;
+    font-size: 15px;
+}
+.control-container {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+}
+.control-container + .control-container {
+    margin-top: 0.7em;
+}
+.screen-reader { /* 스크린 리더를 고려해서 체크박스를 화면에서 숨김 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    margin: -1px;
+    clip-path: inset(50%);
+}
+.label-box {
+    position: relative;
+}
+.check-icon {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid gray;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.check-icon::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 30%;
+    height: 55%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-70%) rotateZ(40deg);
+    border-right: 1.7px solid #00462A;
+    border-bottom: 1.7px solid #00462A;
+}
+label {
+    padding-left: 2.2em;
+    position: relative;
+    cursor: pointer;
+}
+[type="checkbox"]:checked + .label-box .check-icon {
+    border-color:  #00462A;
+    background-color: #00462A;
+}
+[type="checkbox"]:checked + .label-box .check-icon::before {
+    border-color: #fff;
+}
+
+#loginBtn{
+    margin-top: 20px;
+    width:500px;
+    height: 50px;
+    font-family: 'Pretendard-Bold';
+    font-size: 20px;
+    background-color: #00462A;
+    color: #fff2ff;
+    cursor: pointer;
+}
+.hr-style{
+    border: 0px;
+    width: 500px;
+    height: 1px;
+    background-color: black;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-around;    
+}
+.btn{
+    font-size: 15px;
+    width:150px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    align-items: center;
+
+}
+
+.fake-hr{
+    margin: 0;
+    height: 20px;
+}
